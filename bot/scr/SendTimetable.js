@@ -7,7 +7,6 @@ const SendTimetableForUser = async (bot, db, UserId=0, timetable= 'не пере
         timetable = JSON.parse(timetable_str);
 
     }
-
     if (timetable.length == 0) {
         bot.sendMessage(UserId, 'нет рассписания на сегодня: ')
         return 0
